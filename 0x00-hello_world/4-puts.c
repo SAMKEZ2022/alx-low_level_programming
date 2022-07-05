@@ -1,10 +1,17 @@
 #include <stdio.h>
-/
- * main - Entry point
- * Return: Always 0 (sucess)
+/**
+ * main - entry point
+ * @void: no parameter
+ *
+ * Return: 0
  */
 int main(void)
 {
-puts("\"Programming is like building a multilingual puzzle");
-return (0);
+	char ch;
+
+	for (ch = 'a'; ch <= 'z'; ch++)
+		if (!(ch == 'q' || ch == 'e'))
+			putchar(ch);
+	putchar('\n');
+	return (0);
 }
